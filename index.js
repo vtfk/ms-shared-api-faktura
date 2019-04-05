@@ -26,8 +26,7 @@ router.get('/new', handleFaktura.getNewFaktura)
 router.get('/favicon.ico', handlers.favicon)
 router.put('/', handleFaktura.addSamtykke)
 router.post('/samtykker', handleFaktura.getSamtykkerForUserIds)
-router.get('/:id', handleFaktura.getSamtykke)
-router.post('/:id', handleFaktura.updateSamtykke)
+router.get('/:batchId/download', handleFaktura.downloadBatch)
 
 module.exports = (request, response) => {
   router(request, response, finalhandler(request, response))
