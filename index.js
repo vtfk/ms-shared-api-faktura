@@ -24,9 +24,9 @@ router.get('/docs', handlers.frontpage)
 router.get('/', handleFaktura.getFaktura)
 router.get('/new', handleFaktura.getNewFaktura)
 router.get('/favicon.ico', handlers.favicon)
-router.put('/', handleFaktura.addSamtykke)
-router.post('/samtykker', handleFaktura.getSamtykkerForUserIds)
-router.get('/:batchId/download', handleFaktura.downloadBatch)
+router.get('/batches', handleFaktura.getBatches)
+router.get('/batches/download', handleFaktura.downloadBatch)
+router.get('/batches/:batchId/download', handleFaktura.downloadBatch)
 
 module.exports = (request, response) => {
   router(request, response, finalhandler(request, response))
