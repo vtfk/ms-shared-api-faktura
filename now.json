@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "ms-shared-api-faktura",
+  "context": "telemark",
+  "alias": [
+    "faktura.api.service.t-fk.no"
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "MONGODB_CONNECTION": "@db-cosmostest-felles-read",
+    "MONGODB_COLLECTION": "fakturagrunnlag",
+    "MOA_TENANT_ID": "@moa-tenant-id",
+    "JWT_SECRET": "@tfk-jwt-secret"
+  },
+  "builds": [
+    { "src": "/index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
