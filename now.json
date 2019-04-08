@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "scope": "telemark",
   "name": "ms-shared-api-faktura",
   "alias": [
     "faktura.api.service.t-fk.no"
