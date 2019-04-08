@@ -26,7 +26,7 @@ returns array of items
 ## `GET /batches/download`
 
 Creates a new batch
-Returns a latin1 encoded csv-file of the given batch
+Returns a latin1 encoded csv-file of the given batch if there are files else you'll get a 404 and an empty array.
 
 ## `GET /batches/:batchId/download`
 
