@@ -8,14 +8,29 @@ API for the faktura service
 
 List all batches
 
+returns array of items
+
+```JavaScript
+[
+  {
+    batchId: "V1StGXR8_Z5jdHi6B-myT",
+    batchCreated: 1554728722868,
+  },
+  {
+    batchId: "OuXThQPmRf_aiAPNuRKVA",
+    batchCreated: 1554464941589,
+  }
+]
+```
+
 ## `GET /batches/download`
 
 Creates a new batch
-Downloads a latin1 encoded csv-file of the given batch
+Returns a latin1 encoded csv-file of the given batch
 
 ## `GET /batches/:batchId/download`
 
-Downloads a latin1 encoded csv-file of the given batch
+Returns a latin1 encoded csv-file of the given batch
 
 ## `GET /docs`
 
@@ -25,6 +40,9 @@ This readme
 
 Returns number of new files
 
+```JavaScript
+3
+```
 
 # License
 
