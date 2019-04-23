@@ -52,7 +52,7 @@
     "cors": "2.8.5",
     "express-jwt": "5.3.1",
     "finalhandler": "1.1.1",
-    "json2csv": "4.4.1",
+    "json2csv": "4.5.0",
     "jsonwebtoken": "8.5.1",
     "markdown-it": "8.4.2",
     "micro": "9.3.3",
