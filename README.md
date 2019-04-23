@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/vtfk/ms-shared-api-faktura.svg?branch=master)](https://travis-ci.com/vtfk/ms-shared-api-faktura)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
 # ms-shared-api-faktura
 
 API for the faktura service
