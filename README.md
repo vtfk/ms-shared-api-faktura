@@ -3,7 +3,9 @@
 
 # ms-shared-api-faktura
 
-API for the faktura service
+API for the faktura service.
+
+Connect it to a compatible database to download batches of invoices ready for import by Visma.
 
 # API
 
@@ -28,24 +30,45 @@ returns array of items
 
 ## `GET /batches/download`
 
-Creates a new batch
+Creates a new batch.
 Returns a latin1 encoded csv-file of the given batch if there are files else you'll get a 404 and an empty array.
+The batch size is limited to 100 invoices.
+
+Returns
+
+```
+01020304050;Ole Rusk;Konglevegen 38;;1732;Høtten;9876543211;ole@rusk.no;103;1074;1;ElevPC 2018;Ulla Rusk Rasch - Bamble videregående skole - 32 32 32 41
+```
 
 ## `GET /batches/:batchId/download`
 
-Returns a latin1 encoded csv-file of the given batch
+Returns a latin1 encoded csv-file of the given batch.
+
+Returns
+
+```
+01020304050;Ole Rusk;Konglevegen 38;;1732;Høtten;9876543211;ole@rusk.no;103;1074;1;ElevPC 2018;Ulla Rusk Rasch - Bamble videregående skole - 32 32 32 41
+```
 
 ## `GET /docs`
 
-This readme
+This readme.
 
 ## `GET /new`
 
-Returns number of new files
+Returns number of new files.
+
+A new file is an invoice not yet downloaded via a batch.
+
+Returns
 
 ```JavaScript
 3
 ```
+
+# Related
+
+- [web-admin-faktura](admin.faktura.service.t-fk.no) - GUI for this API
 
 # License
 
