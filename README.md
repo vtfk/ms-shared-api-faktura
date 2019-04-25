@@ -75,6 +75,9 @@ MONGODB_CONNECTION=db-connection # Your mongodb connection string
 MONGODB_COLLECTION=fakturagrunnlag # Name for the collection
 MOA_TENANT_ID=@moa_tenant_id # Tenant id for Azure AD, used for GUI (see related)
 JWT_SECRET=@jwt-secret # JWT for machine to machine use of the api
+PAPERTRAIL_HOST=@papertrail-host # Your papertrail host
+PAPERTRAIL_PORT=@papertrail-port # your papertrail port
+PAPERTRAIL_HOSTNAME=elevpc # Your papertrail hostname for logs
 ```
 
 ## Deploy to ZEIT/Now
