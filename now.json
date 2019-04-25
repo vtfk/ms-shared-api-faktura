@@ -10,7 +10,10 @@
     "MONGODB_CONNECTION": "@db-cosmostest-felles-read",
     "MONGODB_COLLECTION": "fakturagrunnlag",
     "MOA_TENANT_ID": "@moa_tenant_id",
-    "JWT_SECRET": "@tfk-jwt-secret"
+    "JWT_SECRET": "@tfk-jwt-secret",
+    "PAPERTRAIL_HOST": "@tfk-papertrail-host",
+    "PAPERTRAIL_PORT": "@tfk-papertrail-port",
+    "PAPERTRAIL_HOSTNAME": "elevpc"
   },
   "builds": [
     { "src": "/index.js", "use": "@now/node" }
