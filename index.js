@@ -7,7 +7,6 @@ const machinelist = ['/samtykker']
 const auth = require('./lib/token-auth')(whitelist, machinelist)
 
 // Handlers
-const handlers = require('./lib/handlers')
 const handleFaktura = require('./lib/handle-faktura')
 
 // Initialize a new router
@@ -20,10 +19,8 @@ router.use(cors())
 router.use(auth)
 
 // ROUTES
-router.get('/docs', handlers.frontpage)
 router.get('/', handleFaktura.getFaktura)
 router.get('/new', handleFaktura.getNewFaktura)
-router.get('/favicon.ico', handlers.favicon)
 router.get('/batches', handleFaktura.getBatches)
 router.get('/batches/download', handleFaktura.downloadBatch)
 router.get('/batches/:batchId/download', handleFaktura.downloadBatch)

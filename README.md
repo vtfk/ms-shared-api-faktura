@@ -91,7 +91,7 @@ $ npm run deploy
 
 # Related
 
-- [web-admin-faktura](admin.faktura.service.t-fk.no) - GUI for this API
+- [web-vgo-minelev-portal](https://github.com/vtfk/web-vgo-minelev-portal) - GUI for this API
 
 # License
 

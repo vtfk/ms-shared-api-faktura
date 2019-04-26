@@ -54,7 +54,6 @@
     "finalhandler": "1.1.1",
     "json2csv": "4.5.0",
     "jsonwebtoken": "8.5.1",
-    "markdown-it": "8.4.2",
     "micro": "9.3.3",
     "mongodb": "3.2.3",
     "nanoid": "2.0.1",
