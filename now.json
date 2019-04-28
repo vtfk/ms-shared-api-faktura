@@ -45,6 +45,14 @@
         "Access-Control-Allow-Methods": "GET, OPTIONS"
       }
     },
+    { "src": "/batches",
+      "dest": "/api/get-batches.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+        "Access-Control-Allow-Methods": "GET, OPTIONS"
+      }
+    },
     { "src": "/(.*)",
       "dest": "/index.js",
       "headers": {
