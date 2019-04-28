@@ -21,6 +21,10 @@
       "src": "/index.js",
       "use": "@now/node" 
     },
+    { 
+      "src": "/api/*js",
+      "use": "@now/node" 
+    },
     {
       "src": "*.md",
       "use": "@now/md"
@@ -32,6 +36,13 @@
     },
     { "src": "/favicon.ico",
       "dest": "/static/favicon.ico"
+    },
+    { "src": "/new",
+      "dest": "/api/get-new-faktura.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+      }
     },
     { "src": "/(.*)", "dest": "/index.js" }
   ]
