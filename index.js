@@ -20,7 +20,6 @@ router.use(auth)
 
 // ROUTES
 router.get('/', handleFaktura.getFaktura)
-router.get('/new', handleFaktura.getNewFaktura)
 router.get('/batches', handleFaktura.getBatches)
 router.get('/batches/download', handleFaktura.downloadBatch)
 router.get('/batches/:batchId/download', handleFaktura.downloadBatch)
