@@ -1,10 +1,11 @@
 // Packages
 const Router = require('router')
 const finalhandler = require('finalhandler')
-const cors = require('cors')
+// const cors = require('cors')
 const whitelist = ['/docs', '/favicon.ico']
 const machinelist = ['/samtykker']
 const auth = require('./lib/token-auth')(whitelist, machinelist)
+const logger = require('./lib/logger')
 
 // Handlers
 const handleFaktura = require('./lib/handle-faktura')
@@ -13,7 +14,7 @@ const handleFaktura = require('./lib/handle-faktura')
 const router = Router()
 
 // CORS
-router.use(cors())
+// router.use(cors())
 
 // AUTH
 router.use(auth)
@@ -24,5 +25,11 @@ router.get('/batches/download', handleFaktura.downloadBatch)
 router.get('/batches/:batchId/download', handleFaktura.downloadBatch)
 
 module.exports = (request, response) => {
-  router(request, response, finalhandler(request, response))
+  if (request.method.toLowerCase() === 'options') {
+    logger('info', ['preflight', 'quick return'])
+    response.writeHead(200)
+    response.end('')
+  } else {
+    router(request, response, finalhandler(request, response))
+  }
 }
