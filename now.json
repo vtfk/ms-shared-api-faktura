@@ -7,7 +7,7 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "MONGODB_CONNECTION": "@db-tfkcosmos-felles",
+    "MONGODB_CONNECTION": "@db-tfkcosmos-connection",
     "MONGODB_COLLECTION": "fakturagrunnlag",
     "MONGODB_NAME": "felles",
     "MOA_TENANT_ID": "@moa_tenant_id",
