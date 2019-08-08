@@ -1,4 +1,3 @@
-const { send } = require('micro')
 const getUserName = require('../lib/get-user-name')
 const getFaktura = require('../lib/get-faktura')
 const logger = require('../lib/logger')
@@ -16,10 +15,11 @@ async function getNewFaktura (request, response) {
     try {
       const documents = await getFaktura({ batchId: { '$exists': false } })
       logger('info', ['getNewFaktura', 'userId', userId, 'faktura', documents.length, 'success'])
-      send(response, 200, documents.length)
+      response.send(documents.length)
     } catch (error) {
       logger('error', ['getNewFaktura', 'userId', userId, error])
-      send(response, 500, error)
+      response.status(500)
+      response.send(error)
     }
   }
 }

@@ -1,4 +1,3 @@
-const { send } = require('micro')
 const getUserName = require('../lib/get-user-name')
 const getBatches = require('../lib/get-batches')
 const logger = require('../lib/logger')
@@ -16,10 +15,11 @@ async function getAllBatches (request, response) {
     try {
       const documents = await getBatches()
       logger('info', ['getAllBatches', 'userId', userId, 'faktura', documents.length, 'success'])
-      send(response, 200, documents.sort((a, b) => a.batchCreated < b.batchCreated))
+      response.json(documents.sort((a, b) => a.batchCreated < b.batchCreated))
     } catch (error) {
       logger('error', ['getAllBatches', 'userId', userId, error])
-      send(response, 500, error)
+      response.status(500)
+      response.send(error)
     }
   }
 }

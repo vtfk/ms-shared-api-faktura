@@ -1,7 +1,6 @@
 // Packages
 const Router = require('router')
 const finalhandler = require('finalhandler')
-// const cors = require('cors')
 const whitelist = ['/docs', '/favicon.ico']
 const machinelist = ['/samtykker']
 const auth = require('./lib/token-auth')(whitelist, machinelist)
@@ -12,9 +11,6 @@ const handleFaktura = require('./lib/handle-faktura')
 
 // Initialize a new router
 const router = Router()
-
-// CORS
-// router.use(cors())
 
 // AUTH
 router.use(auth)
