@@ -13,7 +13,7 @@ async function getNewFaktura (request, response) {
     const userId = getUserName(upn)
     logger('info', ['getNewFaktura', 'userId', userId])
     try {
-      const documents = await getFaktura({ batchId: { '$exists': false } })
+      const documents = await getFaktura({ batchId: { $exists: false } })
       logger('info', ['getNewFaktura', 'userId', userId, 'faktura', documents.length, 'success'])
       response.send(documents.length)
     } catch (error) {
