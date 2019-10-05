@@ -7,11 +7,11 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "MONGODB_CONNECTION": "@db-tfkcosmos-connection",
-    "MONGODB_COLLECTION": "fakturagrunnlag",
-    "MONGODB_NAME": "felles",
-    "MOA_TENANT_ID": "@moa_tenant_id",
-    "JWT_SECRET": "@tfk-jwt-secret",
+    "MONGODB_CONNECTION": "@db-cosmos-prod-connection",
+    "MONGODB_COLLECTION": "@db-cosmos-prod-collection-fakturagrunnlag-name",
+    "MONGODB_NAME": "@db-cosmos-prod-minelev-name",
+    "MOA_TENANT_ID": "@vtfk-moa-tenant-id",
+    "JWT_SECRET": "@api-fakturagrunnlag-secret",
     "PAPERTRAIL_HOST": "@tfk-papertrail-host",
     "PAPERTRAIL_PORT": "@tfk-papertrail-port",
     "PAPERTRAIL_HOSTNAME": "elevpc"
