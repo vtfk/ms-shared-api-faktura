@@ -91,7 +91,7 @@ $ npm run deploy
 
 # Related
 
-- [web-vgo-minelev-portal](https://github.com/vtfk/web-vgo-minelev-portal) - GUI for this API
+- [web-vgo-admin-elevpc-faktura](https://github.com/vtfk/web-vgo-admin-elevpc-faktura) - GUI for this API
 
 # License
 
