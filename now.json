@@ -7,7 +7,7 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "MONGODB_CONNECTION": "@db-cosmos-prod-connection",
+    "MONGODB_CONNECTION": "@db-cosmos-dev-connection",
     "MONGODB_COLLECTION": "@db-cosmos-prod-collection-fakturagrunnlag-name",
     "MONGODB_NAME": "@db-cosmos-prod-minelev-name",
     "MOA_TENANT_ID": "@vtfk-moa-tenant-id",
@@ -64,8 +64,7 @@
         "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
         "Access-Control-Allow-Methods": "GET, OPTIONS",
         "Access-Control-Allow-Credentials": "true",
-        "Access-Control-Max-Age": "3600",
-        "Content-Type": "text/csv; charset=latin1"
+        "Access-Control-Max-Age": "3600"
       }
     }
   ]
