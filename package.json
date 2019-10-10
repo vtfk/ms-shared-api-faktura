@@ -1,7 +1,7 @@
 {
   "name": "ms-shared-api-faktura",
   "description": "Main logs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "private": true,
   "author": {
