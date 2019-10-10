@@ -7,7 +7,7 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "MONGODB_CONNECTION": "@db-cosmos-dev-connection",
+    "MONGODB_CONNECTION": "@db-cosmos-prod-connection",
     "MONGODB_COLLECTION": "@db-cosmos-prod-collection-fakturagrunnlag-name",
     "MONGODB_NAME": "@db-cosmos-prod-minelev-name",
     "MOA_TENANT_ID": "@vtfk-moa-tenant-id",
