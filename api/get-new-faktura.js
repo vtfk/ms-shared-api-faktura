@@ -11,9 +11,10 @@ async function getNewFaktura (request, response) {
   } else {
     const { upn } = request.token
     const userId = getUserName(upn)
+    const shrdKey = process.env.MONGODB_SHARD_KEY
     logger('info', ['getNewFaktura', 'userId', userId])
     try {
-      const documents = await getFaktura({ batchId: { $exists: false } })
+      const documents = await getFaktura({ batchId: { $exists: false }, shrdKey })
       logger('info', ['getNewFaktura', 'userId', userId, 'faktura', documents.length, 'success'])
       response.send(documents.length)
     } catch (error) {

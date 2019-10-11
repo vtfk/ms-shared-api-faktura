@@ -10,6 +10,7 @@
     "MONGODB_CONNECTION": "@db-cosmos-prod-connection",
     "MONGODB_COLLECTION": "@db-cosmos-prod-collection-fakturagrunnlag-name",
     "MONGODB_NAME": "@db-cosmos-prod-minelev-name",
+    "MONGODB_SHARD_KEY": "@vtfk-fakturagrunnlag-shard-key",
     "MOA_TENANT_ID": "@vtfk-moa-tenant-id",
     "JWT_SECRET": "@api-fakturagrunnlag-secret",
     "PAPERTRAIL_HOST": "@tfk-papertrail-host",
