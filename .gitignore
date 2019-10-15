@@ -70,3 +70,6 @@ typings/
 
 # Local files
 original.csv
+utf8-latin1.csv
+latin1-latin1.csv
+latin1-utf8-latin1.csv
