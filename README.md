@@ -93,6 +93,7 @@ $ npm run deploy
 # Related
 
 - [web-vgo-admin-elevpc-faktura](https://github.com/vtfk/web-vgo-admin-elevpc-faktura) - GUI for this API
+- [tools-elevpc-faktura](https://github.com/vtfk/tools-elevpc-faktura) - Collection of tools for generating invoices
 
 # License
 
